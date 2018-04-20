@@ -19,3 +19,9 @@ yum常用命令
                       yum clean oldheaders: 清除缓存目录下旧的 headers
                       yum clean, yum clean all (= yum clean packages; yum clean oldheaders) :清除缓存目录下的软件包及旧的headers
             实例 [root@www ~]# yum list pam*
+国内 yum 源
+            首先备份/etc/yum.repos.d/CentOS-Base.repo:mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+            下载对应版本repo文件, 放入/etc/yum.repos.d/:
+            运行以下命令生成缓存    yum clean all
+                                  yum makecache
+                                                            
