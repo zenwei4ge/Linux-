@@ -18,3 +18,4 @@ yum常用命令
                       yum clean headers: 清除缓存目录下的 headers
                       yum clean oldheaders: 清除缓存目录下旧的 headers
                       yum clean, yum clean all (= yum clean packages; yum clean oldheaders) :清除缓存目录下的软件包及旧的headers
+            实例 [root@www ~]# yum list pam*
